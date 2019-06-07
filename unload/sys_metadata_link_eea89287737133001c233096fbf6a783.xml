@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>70ad699e47410200e90d87e8dee4907d</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="change_request">
+    <change_request action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <activity_due/>
+        <additional_assignee_list/>
+        <approval>approved</approval>
+        <approval_history/>
+        <approval_set/>
+        <assigned_to/>
+        <assignment_group display_value="Service Desk" name="Service Desk">d625dccec0a8016700a222a0f7900d06</assignment_group>
+        <backout_plan>Due to the nature of this procedure any means to back out of this after the process has begun should not be implemented. Any type of recovery from backup or any other tool could cause corruption to the Active Directory database and could cause more harm than good. Once the implementation plan has been started it will need to be carried out completely.</backout_plan>
+        <business_duration/>
+        <business_service/>
+        <cab_date/>
+        <cab_delegate/>
+        <cab_recommendation/>
+        <cab_required>false</cab_required>
+        <calendar_duration/>
+        <category>Other</category>
+        <change_plan/>
+        <close_code>successful</close_code>
+        <close_notes>Completed successfully</close_notes>
+        <closed_at>2015-07-06 18:18:53</closed_at>
+        <closed_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</closed_by>
+        <cmdb_ci/>
+        <comments/>
+        <comments_and_work_notes/>
+        <company/>
+        <conflict_last_run/>
+        <conflict_status>Not Run</conflict_status>
+        <contact_type>phone</contact_type>
+        <contract/>
+        <correlation_display/>
+        <correlation_id/>
+        <delivery_plan/>
+        <delivery_task/>
+        <description>Decommission a server from use including removal from backup, systems management and monitoring systems and disposal of hardware</description>
+        <due_date/>
+        <end_date/>
+        <escalation>0</escalation>
+        <expected_start/>
+        <follow_up/>
+        <group_list/>
+        <impact>3</impact>
+        <implementation_plan>--Inform local IT of the necessary steps to change DHCP and static IP clients to use a different DC/DNS servers for name resolution&#13;
+--Use Network Monitor to check if any DNS queries are being received by the DC before demoting, reconfigure any requestors DNS before continuing&#13;
+--Notify the Operations Teams about the demotion via email&#13;
+--Place the DC in outage mode in monitoring tools&#13;
+--Run the AD DC Demotion Preparation tool in management tools&#13;
+--Logon to the DC to be removed from Active Directory--Run DCPROMO to uninstall AD and reboot&#13;
+--Uninstall DNS&#13;
+--Remove the server from the domain by joining it to a workgroup and reboot&#13;
+--Logon to a regional hub DC in the same domain as the DC that was removed&#13;
+--Delete the computer object&#13;
+--Delete any leftover DNS records&#13;
+--Locate the DNS zone for the domain and then right-click it and select properties&#13;
+--Click the name servers tab&#13;
+--Locate and delete the entry for the removed DNS server (if present)&#13;
+--Delete the server object in AD Sites and Services&#13;
+--Logon to a forest root DC&#13;
+--launch the DNS console on the forest root DC&#13;
+--locate and delete all DNS records that point to the removed DC in the _msdcs zone and in any child zones of it &#13;
+--Also verify that no record exists in the delegated zone for the child domain zone&#13;
+--Create requests to remove device from anti-virus, endpoint management, monitoring and ServiceNow CMDB</implementation_plan>
+        <justification/>
+        <knowledge>false</knowledge>
+        <location/>
+        <made_sla>true</made_sla>
+        <number>CHG0000023</number>
+        <on_hold>false</on_hold>
+        <on_hold_reason/>
+        <on_hold_task/>
+        <opened_at>2015-07-06 18:17:21</opened_at>
+        <opened_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</opened_by>
+        <order/>
+        <outside_maintenance_schedule>false</outside_maintenance_schedule>
+        <parent/>
+        <phase>requested</phase>
+        <phase_state>open</phase_state>
+        <priority>4</priority>
+        <production_system>false</production_system>
+        <reason/>
+        <reassignment_count>2</reassignment_count>
+        <rejection_goto/>
+        <requested_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</requested_by>
+        <requested_by_date/>
+        <review_comments/>
+        <review_date/>
+        <review_status/>
+        <risk>3</risk>
+        <risk_impact_analysis/>
+        <scope>3</scope>
+        <service_offering/>
+        <short_description>Decommission server</short_description>
+        <sla_due/>
+        <start_date/>
+        <state>3</state>
+        <std_change_producer_version display_value="Decommission local office Domain Controller - 1">deb8544047810200e90d87e8dee490af</std_change_producer_version>
+        <sys_class_name>change_request</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2015-07-06 18:17:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>70ad699e47410200e90d87e8dee4907d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2015-07-06 18:18:53</sys_updated_on>
+        <test_plan>--No client issues result from the removal of this DC&#13;
+--All references to this DC have been removed from Active Directory&#13;
+--All references to this DC have been removed from DNS&#13;
+--All references to this DC have been removed from anti-virus, endpoint management, monitoring and ServiceNow CMDB</test_plan>
+        <time_worked/>
+        <type>standard</type>
+        <unauthorized>false</unauthorized>
+        <upon_approval>proceed</upon_approval>
+        <upon_reject>cancel</upon_reject>
+        <urgency>3</urgency>
+        <user_input/>
+        <variables/>
+        <watch_list/>
+        <wf_activity/>
+        <work_end>2015-07-06 18:18:34</work_end>
+        <work_notes/>
+        <work_notes_list/>
+        <work_start>2015-07-06 18:17:41</work_start>
+    </change_request>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-07 09:25:57</sys_created_on>
+        <sys_id>eea89287737133001c233096fbf6a783</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CHG0000023</sys_name>
+        <sys_package display_value="jun_7" source="sn_jun_7">ea32f94b733133001c233096fbf6a753</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="jun_7">ea32f94b733133001c233096fbf6a753</sys_scope>
+        <sys_update_name>sys_metadata_link_eea89287737133001c233096fbf6a783</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-07 09:25:57</sys_updated_on>
+        <tablename>task</tablename>
+    </sys_metadata_link>
+</record_update>
