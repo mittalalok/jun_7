@@ -1,12 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link"><sys_metadata_link action="DELETE"><directory>update</directory><documentkey>46cc713aa9fe1981008a95d213681c65</documentkey><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="change_request">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>46cb2f54a9fe198101cf6814a2754606</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="change_request">
     <change_request action="INSERT_OR_UPDATE">
         <active>true</active>
         <activity_due/>
         <additional_assignee_list/>
-        <approval>approved</approval>
+        <approval>requested</approval>
         <approval_history/>
         <approval_set/>
-        <assigned_to display_value="David Loo">5137153cc611227c000bbd1bd8cd2007</assigned_to>
+        <assigned_to display_value="ITIL User">681b365ec0a80164000fb0b05854a0cd</assigned_to>
         <assignment_group/>
         <backout_plan/>
         <business_duration/>
@@ -16,13 +20,13 @@
         <cab_recommendation/>
         <cab_required>false</cab_required>
         <calendar_duration/>
-        <category>Telecom</category>
+        <category>Hardware</category>
         <change_plan/>
         <close_code/>
         <close_notes/>
-        <closed_at>2019-05-15 09:46:07</closed_at>
-        <closed_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</closed_by>
-        <cmdb_ci display_value="San Diego Gateway">10884798c61122750108b095e21e4080</cmdb_ci>
+        <closed_at/>
+        <closed_by/>
+        <cmdb_ci/>
         <comments/>
         <comments_and_work_notes/>
         <company/>
@@ -34,9 +38,10 @@
         <correlation_id/>
         <delivery_plan/>
         <delivery_task/>
-        <description/>
+        <description>Please install new Cat. 6500 in Data center 01
+        </description>
         <due_date/>
-        <end_date>2019-05-14 23:46:31</end_date>
+        <end_date>2019-05-14 00:30:00</end_date>
         <escalation>0</escalation>
         <expected_start/>
         <follow_up/>
@@ -47,24 +52,24 @@
         <knowledge>false</knowledge>
         <location/>
         <made_sla>false</made_sla>
-        <number>CHG0000005</number>
+        <number>CHG0000008</number>
         <on_hold>false</on_hold>
         <on_hold_reason/>
         <on_hold_task/>
-        <opened_at>2018-09-05 23:15:36</opened_at>
+        <opened_at>2018-09-05 23:14:14</opened_at>
         <opened_by display_value="">glide.maint</opened_by>
         <order/>
         <outside_maintenance_schedule>false</outside_maintenance_schedule>
         <parent/>
         <phase>requested</phase>
         <phase_state>open</phase_state>
-        <priority>4</priority>
+        <priority>1</priority>
         <production_system>false</production_system>
         <reason/>
         <reassignment_count/>
         <rejection_goto/>
-        <requested_by display_value="Fred Luddy">5137153cc611227c000bbd1bd8cd2005</requested_by>
-        <requested_by_date>2018-08-23 00:00:00</requested_by_date>
+        <requested_by/>
+        <requested_by_date>2018-08-30 00:00:00</requested_by_date>
         <review_comments/>
         <review_date/>
         <review_status/>
@@ -72,20 +77,20 @@
         <risk_impact_analysis/>
         <scope>3</scope>
         <service_offering/>
-        <short_description>Install new PBX</short_description>
+        <short_description>Install new Cisco</short_description>
         <sla_due/>
-        <start_date>2019-05-11 07:00:00</start_date>
-        <state>-1</state>
+        <start_date>2019-05-13 19:30:00</start_date>
+        <state>-4</state>
         <std_change_producer_version/>
         <sys_class_name>change_request</sys_class_name>
         <sys_created_by>glide.maint</sys_created_by>
-        <sys_created_on>2018-09-05 23:15:36</sys_created_on>
+        <sys_created_on>2018-09-05 23:14:14</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>46cc713aa9fe1981008a95d213681c65</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_id>46cb2f54a9fe198101cf6814a2754606</sys_id>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-15 09:46:07</sys_updated_on>
+        <sys_updated_on>2019-05-15 09:45:52</sys_updated_on>
         <test_plan/>
         <time_worked/>
         <type>normal</type>
@@ -103,4 +108,19 @@
         <work_start/>
     </change_request>
 </record_update>
-]]></payload><sys_class_name>sys_metadata_link</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-06-07 07:16:45</sys_created_on><sys_id>751b7d4f733133001c233096fbf6a777</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CHG0000005</sys_name><sys_package display_value="jun_7" source="sn_jun_7">ea32f94b733133001c233096fbf6a753</sys_package><sys_policy/><sys_scope display_value="jun_7">ea32f94b733133001c233096fbf6a753</sys_scope><sys_update_name>sys_metadata_link_751b7d4f733133001c233096fbf6a777</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-06-07 07:16:45</sys_updated_on><tablename>task</tablename></sys_metadata_link></record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-07 09:04:00</sys_created_on>
+        <sys_id>05a356c3737133001c233096fbf6a734</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CHG0000008</sys_name>
+        <sys_package display_value="jun_7" source="sn_jun_7">ea32f94b733133001c233096fbf6a753</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="jun_7">ea32f94b733133001c233096fbf6a753</sys_scope>
+        <sys_update_name>sys_metadata_link_05a356c3737133001c233096fbf6a734</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-07 09:04:00</sys_updated_on>
+        <tablename>task</tablename>
+    </sys_metadata_link>
+</record_update>
